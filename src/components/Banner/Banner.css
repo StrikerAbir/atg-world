@@ -1,0 +1,18 @@
+.text {
+  padding: 0 0 80px 200px;
+}
+
+.zIndex {
+  left: 0;
+  z-index: 500;
+}
+
+@media screen and (max-width: 567px) {
+  .bannerImg {
+    height: 230px;
+  }
+  .text {
+    padding: 0 0 20px 50px;
+  }
+}
+
