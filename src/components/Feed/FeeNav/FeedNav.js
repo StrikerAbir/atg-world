@@ -3,7 +3,7 @@ import { FaUserPlus } from "react-icons/fa";
 import './FeedNav.css'
 const FeedNav = () => {
   return (
-    <div className="d-flex justify-content-between mt-5  border border-top-0 border-start-0 border-end-0 ">
+    <div className="d-lg-flex d-none justify-content-between mt-5  border border-top-0 border-start-0 border-end-0 ">
       <ul className="nav  ">
         <li className="nav-item border border-top-0 border-start-0 border-end-0 border-dark border-2 bor pb-3">
           <a
@@ -47,13 +47,13 @@ const FeedNav = () => {
             href="/"
             aria-expanded="false"
           >
-            Write a Post
+            <span className='pe-2'>Write a Post</span>
           </button>
         </li>
         <li className="nav-item ms-3">
           <button className="nav-link btn btn-primary text-white d-flex justify-content-center align-items-center">
             <FaUserPlus></FaUserPlus>
-            <div className='ms-1'>Join Group</div>
+            <div className="ms-1">Join Group</div>
           </button>
         </li>
       </ul>
