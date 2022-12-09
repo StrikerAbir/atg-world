@@ -64,11 +64,14 @@ const Login = () => {
                     />
                   </div>
                 </form>
+                <button className="d-none d-lg-block w-100 w-25 py-2 my-3 btn btn-primary border-0 rounded-pill">
+                  Sign In
+                </button>
                 <div className="d-flex justify-content-between align-items-center">
-                  <button className="w-lg-100 w-25 py-2 my-3 btn btn-primary border-0 rounded-pill">
+                  <button className="d-lg-none w-25 py-2 my-3 btn btn-primary border-0 rounded-pill">
                     Sign In
                   </button>
-                  <div>
+                  <div className="d-lg-none">
                     <a
                       className="text-black text-decoration-none text-end"
                       href="/"
@@ -94,7 +97,7 @@ const Login = () => {
                   data-bs-toggle="modal"
                   data-bs-target="#signupModal"
                 >
-                  <p className='text-center'>
+                  <p className="text-center">
                     Don't have an account yet?{" "}
                     <span className="text-primary">Create new for free!</span>
                   </p>

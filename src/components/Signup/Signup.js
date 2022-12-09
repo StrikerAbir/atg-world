@@ -90,11 +90,14 @@ const Signup = () => {
                       />
                     </div>
                   </form>
-                  <div className="d-flex justify-content-between align-items-center">
-                    <button className="w-lg-100 py-2 my-3 btn btn-primary border-0 rounded-pill">
+                  <button className="d-none d-lg-block w-100 py-2 my-3 btn btn-primary border-0 rounded-pill">
+                    Create Account
+                  </button>
+                  <div className="d-lg-block d-flex justify-content-between align-items-center">
+                    <button className="d-lg-none py-2 my-3 btn btn-primary border-0 rounded-pill">
                       Create Account
                     </button>
-                    <div>
+                    <div className="d-lg-none">
                       <a
                         className="text-black text-decoration-none text-end"
                         href="/"
@@ -119,7 +122,7 @@ const Signup = () => {
                     data-bs-toggle="modal"
                     data-bs-target="#loginModal"
                   >
-                    <p className='text-center'>
+                    <p className="text-center">
                       Already have an account?{" "}
                       <span className="text-primary">Sign In</span>
                     </p>
