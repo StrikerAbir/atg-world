@@ -1,0 +1,12 @@
+.modalMeasure{
+    width:75%;
+}
+.bgColor{
+background-color: 
+#ccffe6;
+}
+@media  (min-width: 567px){
+    .modalMeasure{
+        max-width: 736px !important
+    }
+}

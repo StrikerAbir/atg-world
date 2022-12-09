@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 import Banner from "./components/Banner/Banner";
 import Feed from "./components/Feed/Feed";
+import Login from "./components/Login/Login";
 import NavBar from "./components/Navbar/NavBar";
 
 export const StateContext = createContext();
@@ -14,6 +15,7 @@ function App() {
         <NavBar></NavBar>
         <Banner></Banner>
         <Feed></Feed>
+        <Login></Login>
       </div>
     </StateContext.Provider>
   );

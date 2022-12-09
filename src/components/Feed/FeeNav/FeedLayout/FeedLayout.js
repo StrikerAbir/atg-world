@@ -5,7 +5,7 @@ import Right from "./Right/Right";
 const FeedLayout = () => {
   return (
     <div className='mt-5'>
-      <div className="row">
+      <div className="row g-0">
         <div className="col-lg-8 col-12">
           <Left></Left>
         </div>

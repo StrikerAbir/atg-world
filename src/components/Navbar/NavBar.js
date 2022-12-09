@@ -22,8 +22,12 @@ const NavBar = () => {
               <FaSearch></FaSearch>
             </div>
           </form>
-          <a href="/" className="text-decoration-none text-black">
-            {" "}
+          <a
+            href="/"
+            className="text-decoration-none text-black"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
             Create account. <span className="text-primary">It's free!</span>
           </a>
         </div>
