@@ -26,7 +26,7 @@ const NavBar = () => {
             href="/"
             className="text-decoration-none text-black"
             data-bs-toggle="modal"
-            data-bs-target="#loginModal"
+            data-bs-target="#signupModal"
           >
             Create account. <span className="text-primary">It's free!</span>
           </a>
