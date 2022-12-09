@@ -6,10 +6,10 @@ const FeedLayout = () => {
   return (
     <div className='mt-5'>
       <div className="row">
-        <div className="col-8">
+        <div className="col-lg-8 col-12">
           <Left></Left>
         </div>
-        <div className="col-4">
+        <div className="col-4 d-none d-lg-block">
           <Right></Right>
         </div>
       </div>

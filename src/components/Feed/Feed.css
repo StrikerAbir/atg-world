@@ -1,3 +1,11 @@
 .feedContainer{
     margin:0 200px ;
 }
+.btnMargin{
+    margin-left: 320px;
+}
+@media screen and (max-width: 567px) {
+    .feedContainer{
+    margin:0;
+}
+}

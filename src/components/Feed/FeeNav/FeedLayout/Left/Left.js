@@ -10,6 +10,8 @@ import Education from "../../../../../assets/images/🔬️ Education.png";
 import Meetup from "../../../../../assets/images/🗓️ Meetup.png";
 import Job from "../../../../../assets/images/💼️ Job.png";
 import NewsCard from "./NewsCard/NewsCard";
+import imgBtn from "../../../../../assets/images/Group 6.png";
+
 import {
   FaEllipsisH,
   FaEye,
@@ -42,8 +44,13 @@ const Left = () => {
       name: "Sarthak Kamra",
     },
   ];
-    return (
-        <div className='me-lg-4'>
+  return (
+    <div className="me-lg-4">
+      <div className="d-md-none">
+        <button className="btn p-0 rounded-circle position-fixed zIndex bottom-0 end-0 mb-5 me-5 btnMargin">
+          <img className="rounded-circle" src={imgBtn} alt="" />
+        </button>
+      </div>
       {posts.map((post) => (
         <NewsCard post={post} key={Math.random()}></NewsCard>
       ))}

@@ -7,7 +7,7 @@ export const StateContext = createContext();
 
 function App() {
   const [joinGroup, setJoinGroup] = useState(false);
-  const states={joinGroup,setJoinGroup};
+  const states = { joinGroup, setJoinGroup };
   return (
     <StateContext.Provider value={states}>
       <div className="">
