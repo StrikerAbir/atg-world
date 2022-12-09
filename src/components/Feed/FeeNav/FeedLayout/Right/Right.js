@@ -1,5 +1,6 @@
 import React from "react";
 import { FaExclamationCircle, FaMapMarkerAlt, FaPen } from "react-icons/fa";
+import Groups from "./Groups/Groups";
 
 const Right = () => {
   return (
@@ -25,7 +26,11 @@ const Right = () => {
               experience.
             </span>
           </p>
-        </div>
+              </div>
+              
+              <div>
+                  <Groups></Groups>
+              </div>
       </div>
     </div>
   );
