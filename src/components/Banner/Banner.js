@@ -20,7 +20,11 @@ const Banner = () => {
         </div>
         <div className="position-absolute zIndex container top-0 d-lg-none">
           <div className="d-flex align-items-center justify-content-between">
-            <div className="text-white fs-3">
+            <div
+              className="text-white fs-3"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
               <FaArrowRight></FaArrowRight>
             </div>
             {!joinGroup ? (

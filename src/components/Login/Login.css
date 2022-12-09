@@ -5,6 +5,12 @@
 background-color: 
 #ccffe6;
 }
+.gap{
+    margin-left: 300px;
+}
+.inputBg{
+background-color: #F7F8FA;
+}
 @media  (min-width: 567px){
     .modalMeasure{
         max-width: 736px !important

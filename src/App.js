@@ -3,6 +3,7 @@ import Banner from "./components/Banner/Banner";
 import Feed from "./components/Feed/Feed";
 import Login from "./components/Login/Login";
 import NavBar from "./components/Navbar/NavBar";
+import Signup from "./components/Signup/Signup";
 
 export const StateContext = createContext();
 
@@ -16,6 +17,7 @@ function App() {
         <Banner></Banner>
         <Feed></Feed>
         <Login></Login>
+        <Signup></Signup>
       </div>
     </StateContext.Provider>
   );
