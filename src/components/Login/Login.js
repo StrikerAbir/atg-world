@@ -18,22 +18,30 @@ const Login = () => {
         <div className="d-flex justify-content-end w-100">
           <button
             type="button"
-            class="btn-close bg-light rounded-circle mb-2"
+            class="btn-close bg-light rounded-circle mb-2 d-none d-lg-block"
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
         </div>
         <div class="modal-content">
-          <div class="modal-header bgColor">
-            <p class="text-success m-0" id="loginModalLabel">
+          <div class="modal-header bgColor d-none d-lg-block">
+            <p class="text-success m-0" id="loginModalLabel ">
               Let's learn, share & inspire each other with our passion for
               computer engineering. Sign up now 🤘🏼
             </p>
           </div>
           <div class="modal-body p-4">
             <div className="d-flex">
-              <div className="w-50">
-                <h3>Sign In</h3>
+              <div className="w-lg-50">
+                <div className="d-flex justify-content-between align-items-center d-lg-none">
+                  <h3>Sign In</h3>
+                  <button
+                    type="button"
+                    class="btn-close bg-light rounded-circle mb-2"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
                 <form
                   className="position-relative border border-2 inputBg mt-3"
                   role="search"
@@ -56,26 +64,40 @@ const Login = () => {
                     />
                   </div>
                 </form>
-                <button className="w-100 py-2 my-3 btn btn-primary border-0 rounded-pill">
-                  Sign In
+                <div className="d-flex justify-content-between align-items-center">
+                  <button className="w-lg-100 w-25 py-2 my-3 btn btn-primary border-0 rounded-pill">
+                    Sign In
+                  </button>
+                  <div>
+                    <a
+                      className="text-black text-decoration-none text-end"
+                      href="/"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signupModal"
+                    >
+                      or? <span className="text-primary">Create Account!</span>
+                    </a>
+                  </div>
+                </div>
+                <button className="w-100 py-1 mt-3 btn btn-light border">
+                  <img src={fb} alt="" /> Sign in with Facebook
                 </button>
-                <button className="w-100 py-1 mt-3 btn btn-light border-0">
-                  <img src={fb} alt="" /> Sign up with Facebook
-                </button>
-                <button className="w-100 py-1 mt-3 btn btn-light border-0">
-                  <img src={google} alt="" /> Sign up with Google
+                <button className="w-100 py-1 mt-3 btn btn-light border">
+                  <img src={google} alt="" /> Sign in with Google
                 </button>
                 <p className="text-center mt-3">Forgot Password?</p>
               </div>
-              <div className="w-50 d-flex flex-column justify-content-end">
+              <div className="w-50 d-flex flex-column justify-content-end d-lg-block d-none">
                 <a
                   className="text-black text-decoration-none text-end"
                   href="/"
                   data-bs-toggle="modal"
                   data-bs-target="#signupModal"
                 >
-                  Don't have an account yet?{" "}
-                  <span className="text-primary">Create new for free!</span>
+                  <p className='text-center'>
+                    Don't have an account yet?{" "}
+                    <span className="text-primary">Create new for free!</span>
+                  </p>
                 </a>
                 <img src={log} alt="" />
               </div>
