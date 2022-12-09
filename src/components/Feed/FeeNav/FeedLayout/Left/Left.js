@@ -42,8 +42,8 @@ const Left = () => {
       name: "Sarthak Kamra",
     },
   ];
-  return (
-    <div>
+    return (
+        <div className='me-lg-4'>
       {posts.map((post) => (
         <NewsCard post={post} key={Math.random()}></NewsCard>
       ))}
