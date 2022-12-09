@@ -3,7 +3,7 @@ import { FaEllipsisH, FaEye, FaShareAlt } from "react-icons/fa";
 
 const NewsCard = ({ post }) => {
   const { img, title, description, view, poster, name, category } = post;
-  console.log(post);
+//   console.log(post);
   return (
     <div className="card mb-3">
       <img src={img} className="card-img-top" alt="..." />

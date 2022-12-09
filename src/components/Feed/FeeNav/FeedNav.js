@@ -1,7 +1,10 @@
-import React from "react";
-import { FaUserPlus } from "react-icons/fa";
-import './FeedNav.css'
+import React, { useContext } from "react";
+import { FaSignOutAlt, FaUserPlus } from "react-icons/fa";
+import { StateContext } from "../../../App";
+import "./FeedNav.css";
 const FeedNav = () => {
+  const { joinGroup, setJoinGroup } = useContext(StateContext);
+  console.log(joinGroup);
   return (
     <div className="d-lg-flex d-none justify-content-between mt-5  border border-top-0 border-start-0 border-end-0 ">
       <ul className="nav  ">
@@ -47,14 +50,27 @@ const FeedNav = () => {
             href="/"
             aria-expanded="false"
           >
-            <span className='pe-2'>Write a Post</span>
+            <span className="pe-2">Write a Post</span>
           </button>
         </li>
         <li className="nav-item ms-3">
-          <button className="nav-link btn btn-primary text-white d-flex justify-content-center align-items-center">
-            <FaUserPlus></FaUserPlus>
-            <div className="ms-1">Join Group</div>
-          </button>
+          {joinGroup ? (
+            <button
+              onClick={() => setJoinGroup(!joinGroup)}
+              className="nav-link btn btn-primary text-white d-flex justify-content-center align-items-center"
+            >
+              <FaUserPlus></FaUserPlus>
+              <div className="ms-1">Join Group</div>
+            </button>
+          ) : (
+            <button
+              onClick={() => setJoinGroup(!joinGroup)}
+              className="nav-link btn border text-dark d-flex justify-content-center align-items-center"
+            >
+              <FaSignOutAlt></FaSignOutAlt>
+              <div className="ms-1">Leave Group</div>
+            </button>
+          )}
         </li>
       </ul>
     </div>

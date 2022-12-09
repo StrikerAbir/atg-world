@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaExclamationCircle, FaMapMarkerAlt, FaPen } from "react-icons/fa";
+import { StateContext } from "../../../../../App";
 import Groups from "./Groups/Groups";
 
 const Right = () => {
+    const { joinGroup } = useContext(StateContext);
   return (
     <div className="ms-5">
       <div className="ps-4">
@@ -11,26 +13,24 @@ const Right = () => {
             <FaMapMarkerAlt></FaMapMarkerAlt>
             <input
               type="text"
-              class="border-0"
+              className="border-0"
               placeholder="Location"
               defaultValue="Nodia, India"
             ></input>
           </div>
           <FaPen></FaPen>
         </div>
-        <div className='mt-4 feedLink d-flex'>
-            <FaExclamationCircle className='w-25 mt-1'></FaExclamationCircle>{" "}
+        <div className="mt-4 feedLink d-flex">
+          <FaExclamationCircle className="w-25 mt-1"></FaExclamationCircle>{" "}
           <p>
             <span>
               Your location will help us serve better and extend a personalised
               experience.
             </span>
           </p>
-              </div>
-              
-              <div>
-                  <Groups></Groups>
-              </div>
+        </div>
+
+        <div>{joinGroup && <Groups></Groups>}</div>
       </div>
     </div>
   );
