@@ -36,7 +36,7 @@ const Signup = () => {
                     <h3>Create Account</h3>
                     <button
                       type="button"
-                      class="btn-close bg-light rounded-circle mb-2"
+                      class="btn-close bg-light rounded-circle mb-2 d-lg-none"
                       data-bs-dismiss="modal"
                       aria-label="Close"
                     ></button>
